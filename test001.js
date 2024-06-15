@@ -10,9 +10,10 @@ accountCity = "Blr"
 accountEmail = "ab@ab.com"
 accountPassword = "6666"
 accountCity = "CRJ"
+let accountState;
 
 // console.log(accountId);
 /**
  * Do not use "var" keyword because of block and functional scope.
  */
-console.table([accountId, accountEmail, accountPassword, accountCity])
+console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
