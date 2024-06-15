@@ -1,3 +1,5 @@
+"use strict"; // Treat all JS code as per new coding convention - Optional to put but its a good practice.
+
 console.log("nnnn")
 
 const accountId = 12344
