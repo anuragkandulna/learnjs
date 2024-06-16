@@ -37,3 +37,8 @@ userOne.greeting2 = function(){
 
 console.log(userOne.greeting)
 console.log(userOne.greeting2)
+
+const user1 = {1: 'a', 2: 'b'}
+const user2 = {3: 'a', 3: 'b'}
+const user3 = {...user1, ...user2}
+console.log(user3)
