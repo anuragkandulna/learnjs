@@ -42,3 +42,14 @@ const user1 = {1: 'a', 2: 'b'}
 const user2 = {3: 'a', 3: 'b'}
 const user3 = {...user1, ...user2}
 console.log(user3)
+
+
+// Destructuring object -> mostly used in React
+const course = {
+    courseName: "JS in 1 shot",
+    instructor: "Anurag",
+    price: 999
+}
+
+const {courseName: name} = course
+console.log(name)
