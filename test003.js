@@ -16,13 +16,24 @@ const userOne = {
     [mySym]: "my symbol 1"
 }
 
-console.log(userOne.name)
-console.log(userOne["name"])
-console.log(userOne["user name"])
-console.log(typeof userOne[mySym])
+// console.log(userOne.name)
+// console.log(userOne["name"])
+// console.log(userOne["user name"])
+// console.log(typeof userOne[mySym])
 
 userOne.name = "Player One"
-Object.freeze(userOne)
+// Object.freeze(userOne)
 userOne.name = "Player 2"
 
 console.log(userOne)
+
+userOne.greeting = function(){
+    console.log("Hello there!!")
+}
+
+userOne.greeting2 = function(){
+    console.log(`This is 2nd greeting ${this.name}`)
+}
+
+console.log(userOne.greeting)
+console.log(userOne.greeting2)
