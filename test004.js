@@ -32,7 +32,7 @@ function addOne(num){
 }
 
 // 2. Cannot be used before decaration
-addTwo(43)
+// addTwo(43)
 const addTwo = function(num){
     return num + 2
 }
