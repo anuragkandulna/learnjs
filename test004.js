@@ -22,3 +22,18 @@ function getSecond(myarr){
 }
 
 console.log(getSecond(arr))
+
+
+// Types of function declaration
+// 1. Can be used before declaration
+addOne(23)
+function addOne(num){
+    return num + 1
+}
+
+// 2. Cannot be used before decaration
+addTwo(43)
+const addTwo = function(num){
+    return num + 2
+}
+
