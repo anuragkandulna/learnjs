@@ -9,6 +9,7 @@
       2. Execution Phase
 
 ### Example with code
+```
 let var1 = 10
 let var2 = 6
 function addNum(num1, num2){
@@ -18,6 +19,7 @@ function addNum(num1, num2){
 
 let res1 = addNum(var1, var2)
 let res2 = addNume(4, 5)
+```
 
 1. Global Context => this
 2. Memory Phase - Collect all variables and store it
