@@ -9,3 +9,8 @@ printName(); // NOTE: apparantly semi-colon is required here for iify isolation 
 ( (name) => {
     console.log(`Anurag here ${name}`)
 })('me'); // closing sem-color is a must in iify
+
+
+(function printName2(){
+    console.log(`this is named iify`)
+})();
