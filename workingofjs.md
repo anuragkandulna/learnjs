@@ -5,8 +5,10 @@
 3. Eval Execution Context (This is part of 1. But executed after step 2.)
 
 ## What happens to JS code 
+```
 {} => 1. Memory Creating Phase
       2. Execution Phase
+```
 
 ### Example with code
 ```
@@ -21,6 +23,8 @@ let res1 = addNum(var1, var2)
 let res2 = addNume(4, 5)
 ```
 
+Stepwise breakdown of code and execution:
+```
 1. Global Context => this
 2. Memory Phase - Collect all variables and store it
     var1 = undefined
@@ -48,4 +52,5 @@ let res2 = addNume(4, 5)
     addNum = {} - new variable envionment + execution thread
     <truncated>
     res2 = 9
+```
 
