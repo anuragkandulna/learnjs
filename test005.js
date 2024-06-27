@@ -37,3 +37,7 @@ const func2 = () => {
         // this does not work in arrow functions. it works only on objects.
 }
 func2()
+
+// Magic of arrow functions -> Single line functions
+const addTwo = (num1, num2) => (num1 + num2)
+console.log(addTwo(3, 4))
