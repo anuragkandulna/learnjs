@@ -13,3 +13,12 @@ const user = {
 // user.welcomeMessage()
 // user.username = "sam"
 // user.welcomeMessage()
+
+function player(){
+    let username = "anurag"
+    console.log(this.username)
+
+    // this does not work in functions. it works only on objects.
+}
+
+player()
