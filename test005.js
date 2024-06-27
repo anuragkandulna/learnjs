@@ -29,3 +29,11 @@ const demo = function(){
     // this does not work in functions. it works only on objects.
 }
 demo()
+
+const func2 = () => {
+    let username = "anurag"
+    console.log(this.username)
+
+        // this does not work in arrow functions. it works only on objects.
+}
+func2()
