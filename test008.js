@@ -16,10 +16,30 @@ map.set('FR', 'France')
 
 // this prints key-value within an array
 for (const key of map) {
-    console.log(key)
+    // console.log(key)
 }
 
-// deserialize an array
+// deserialize array within the map
 for (const [key, value] of map) {
-    console.log(key, ':', value)
+    // console.log(key, ':', value)
+}
+
+// NOTE: only maps are iteratable. objects are not iteratable using above procedure. 
+const names = {
+    n1: 'james bond',
+    n2: 'tom cruise',
+    n3: 'johnny depp'
+}
+// this will fail
+// for (const key of names){
+//     console.log(key)
+// }
+
+for (const key in names){
+    console.log(`${key} has value ${names[key]}`)
+}
+
+// test for in in arrays
+for (const key in arr) {
+    console.log(`${key} is the index and ${arr[key]} is the value in array`)
 }
