@@ -43,3 +43,5 @@ for (const key in names){
 for (const key in arr) {
     console.log(`${key} is the index and ${arr[key]} is the value in array`)
 }
+
+// NOTE: For-in is used on the iterables and For-of is used in non-iterables
