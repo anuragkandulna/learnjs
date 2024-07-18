@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning 4</title>
+    <style>
+        .bg-black {
+            background-color: #212121;
+            color: #fff
+        }
+    </style>
+
+</head>
+
+<body class="bg-black">
+    <!-- placeholder comment -->
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    function addLanguage(langName){
+
+        // create new list item
+        const tempLang = document.createElement('li')
+        const tempNodeText = document.createTextNode(langName)
+        tempLang.appendChild(tempNodeText)
+        console.log(tempLang)
+
+        // append list item to unordered list
+        document.querySelector('.language').appendChild(tempLang)
+        // console.log(parentList)
+        // parentList.appendChild(tempLang)
+
+        // print final list
+        // console.log()
+    }
+
+    // Invoke function
+    addLanguage('Java')
+</script>
+
+
+</html>
