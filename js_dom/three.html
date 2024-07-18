@@ -5,15 +5,8 @@
     <title>DOM learning 3</title>
     <style>
         .bg-black {
-            background-color: #212121
-        }
-        #title {
-            text-align: center;
-            color: aquamarine;
-        }
-        .parent {
-            size: 20px;
-            color: red;
+            background-color: #212121;
+            color: #fff
         }
     </style>
 
@@ -22,21 +15,22 @@
     console.log(div)
     div.className = "main"
     div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute('title', 'generated title')
+    div.style.backgroundColor = 'green'
+    div.style.padding = '12px'
+
+    // Adding text here
+    const addedText = document.createTextNode('learing js coding text')
+    div.appendChild(addedText)
+
+    document.body.appendChild(div)
 
 </script>
 
 </head>
 
 <body class="bg-black">
-    <div>
-        <h1 id="title" class="heading">DOM learing basics 3</h1>
-        <p>some random text</p>
-    </div>
-    <div class="parent">
-        <div class="days">sunday</div>
-        <div class="days">monday</div>
-        <div class="days">tuesday</div>
-    </div>
+    <!-- placeholder comment -->
 </body>
 
 </html>
