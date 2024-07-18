@@ -16,6 +16,15 @@
             color: red;
         }
     </style>
+
+<script>
+    const parent = document.querySelector('.parent')
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML)
+    }
+
+</script>
+
 </head>
 
 <body class="bg-black">
@@ -30,11 +39,4 @@
     </div>
 </body>
 
-<script>
-    const parent = document.querySelector('.parent')
-    for (let i = 0; i < parent.days.length; i++) {
-        console.log(parent.days[i].innerHTML)
-    }
-
-</script>
 </html>
